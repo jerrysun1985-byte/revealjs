@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Client Deck Template</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@6.0.1/dist/reveal.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@6.0.1/dist/theme/black.css" id="theme" />
+    <style>
+      .deck-back {
+        position: fixed;
+        top: 12px;
+        right: 12px;
+        z-index: 30;
+        padding: 8px 12px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.14);
+        color: #fff;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <a class="deck-back" href="../../../">回到入口</a>
+    <div class="reveal">
+      <div class="slides">
+        <section data-markdown data-separator="^---$" data-separator-vertical="^--$" data-separator-notes="^Notes:" data-deck-markdown>
+          <textarea data-template>
+# Loading...
+          </textarea>
+        </section>
+      </div>
+    </div>
+
+    <script type="module">
+      import Reveal from 'https://cdn.jsdelivr.net/npm/reveal.js@6.0.1/dist/reveal.mjs';
+      import Markdown from 'https://cdn.jsdelivr.net/npm/reveal.js@6.0.1/dist/plugin/markdown.mjs';
+
+      const section = document.querySelector('[data-deck-markdown]');
+      const response = await fetch('./slides.md', { cache: 'no-store' });
+      const markdown = await response.text();
+      section.innerHTML = `<textarea data-template>${markdown}</textarea>`;
+
+      const deck = new Reveal({
+        hash: true,
+        slideNumber: 'c/t',
+        plugins: [Markdown],
+      });
+      await deck.initialize();
+    </script>
+  </body>
+</html>

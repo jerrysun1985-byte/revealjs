@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>遠東｜紡織染整注意事項</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@6.0.1/dist/reveal.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@6.0.1/dist/theme/black.css" id="theme" />
+    <style>
+      .deck-back {
+        position: fixed;
+        top: 12px;
+        right: 12px;
+        z-index: 30;
+        padding: 8px 12px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.14);
+        color: #fff;
+        text-decoration: none;
+        font-family: ui-sans-serif, system-ui, sans-serif;
+      }
+      .deck-error {
+        color: #ffb3b3;
+        font-size: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <a class="deck-back" href="../../../">回到入口</a>
+    <div class="reveal">
+      <div class="slides">
+        <section data-markdown data-separator="^---$" data-separator-vertical="^--$" data-separator-notes="^Notes:" data-deck-markdown>
+          <textarea data-template>
+# Loading...
+          </textarea>
+        </section>
+      </div>
+    </div>
+
+    <script type="module">
+      import Reveal from 'https://cdn.jsdelivr.net/npm/reveal.js@6.0.1/dist/reveal.mjs';
+      import Markdown from 'https://cdn.jsdelivr.net/npm/reveal.js@6.0.1/dist/plugin/markdown.mjs';
+
+      const section = document.querySelector('[data-deck-markdown]');
+
+      async function start() {
+        try {
+          const response = await fetch('./slides.md', { cache: 'no-store' });
+          if (!response.ok) {
+            throw new Error(`HTTP ${response.status}`);
+          }
+          const markdown = await response.text();
+          section.innerHTML = `<textarea data-template>${markdown}</textarea>`;
+        } catch (error) {
+          section.innerHTML = `<p class="deck-error">Failed to load slides.md: ${error.message}</p>`;
+        }
+
+        const deck = new Reveal({
+          hash: true,
+          slideNumber: 'c/t',
+          plugins: [Markdown],
+        });
+
+        await deck.initialize();
+      }
+
+      start();
+    </script>
+  </body>
+</html>

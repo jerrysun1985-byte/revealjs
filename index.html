@@ -1,43 +1,58 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-Hant">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>reveal.js Presentation</title>
+    <title>Client Presentation Hub</title>
   </head>
   <body>
-    <div class="reveal">
-      <div class="slides">
-        <section data-markdown data-separator="^---$" data-separator-vertical="^--$" data-separator-notes="^Notes:">
-          <textarea data-template>
-# Welcome to reveal.js
+    <div class="site-bg" aria-hidden="true"></div>
+    <main class="shell">
+      <header class="hero">
+        <p class="kicker">Client Presentation Hub</p>
+        <h1>單一入口多簡報平台</h1>
+        <p class="hero-text">
+          統一使用同一個網址管理所有客戶演示簡報。可按客戶、日期與主題快速進入。
+        </p>
+      </header>
 
-This deck is hosted from GitHub and built with Vite.
+      <section class="controls" aria-label="Deck filters">
+        <div class="field">
+          <label for="searchInput">搜尋主題</label>
+          <input id="searchInput" type="search" placeholder="例如：環保認證、紡織染整" />
+        </div>
+        <div class="field">
+          <label for="clientSelect">客戶</label>
+          <select id="clientSelect">
+            <option value="all">全部客戶</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="statusSelect">狀態</label>
+          <select id="statusSelect">
+            <option value="all">全部狀態</option>
+            <option value="active">Active</option>
+            <option value="archived">Archived</option>
+            <option value="draft">Draft</option>
+          </select>
+        </div>
+      </section>
 
----
+      <section class="deck-grid" id="deckGrid" aria-live="polite"></section>
+    </main>
 
-## Why this setup?
+    <template id="deckCardTemplate">
+      <article class="deck-card">
+        <div class="deck-card__top">
+          <p class="deck-card__meta"></p>
+          <span class="deck-card__status"></span>
+        </div>
+        <h2 class="deck-card__title"></h2>
+        <p class="deck-card__tags"></p>
+        <a class="deck-card__link" target="_self" rel="noopener">開啟簡報</a>
+      </article>
+    </template>
 
-- Slides are version-controlled in GitHub
-- Local preview is fast with `npm run dev`
-- Production output is static HTML in `dist/`
-
---
-
-### Vertical slide example
-
-Use `--` in markdown to create vertical slides.
-
----
-
-## Next step
-
-Edit `index.html` (or switch to external markdown) and push to publish updates.
-          </textarea>
-        </section>
-      </div>
-    </div>
-
-    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/home.js"></script>
   </body>
 </html>
