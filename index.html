@@ -8,12 +8,33 @@
   <body>
     <div class="reveal">
       <div class="slides">
-        <section
-          data-markdown="slides.md"
-          data-separator="^---$"
-          data-separator-vertical="^--$"
-          data-separator-notes="^Notes:"
-        ></section>
+        <section data-markdown data-separator="^---$" data-separator-vertical="^--$" data-separator-notes="^Notes:">
+          <textarea data-template>
+# Welcome to reveal.js
+
+This deck is hosted from GitHub and built with Vite.
+
+---
+
+## Why this setup?
+
+- Slides are version-controlled in GitHub
+- Local preview is fast with `npm run dev`
+- Production output is static HTML in `dist/`
+
+--
+
+### Vertical slide example
+
+Use `--` in markdown to create vertical slides.
+
+---
+
+## Next step
+
+Edit `index.html` (or switch to external markdown) and push to publish updates.
+          </textarea>
+        </section>
       </div>
     </div>
 
