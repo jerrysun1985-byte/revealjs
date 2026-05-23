@@ -7,7 +7,11 @@
     "slug": "2026-06-12-fet-three-site-exchange",
     "path": "decks/farglory/2026-06-12-fet-three-site-exchange/",
     "tags": ["三地交流會", "議題改善", "客戶簡報"],
-    "status": "active"
+    "status": "active",
+    "auth": {
+      "required": true,
+      "key": "farglory-2026-06-12"
+    }
   },
   {
     "id": "farglory-2026-05-30-textile-dyeing-notes",
@@ -17,7 +21,11 @@
     "slug": "2026-05-30-textile-dyeing-notes",
     "path": "decks/farglory/2026-05-30-textile-dyeing-notes/",
     "tags": ["紡織", "染整", "客戶簡報"],
-    "status": "active"
+    "status": "active",
+    "auth": {
+      "required": true,
+      "key": "farglory-2026-05-30"
+    }
   },
   {
     "id": "farglory-2026-05-23-eco-cert",
@@ -27,6 +35,10 @@
     "slug": "2026-05-23-eco-cert",
     "path": "decks/farglory/2026-05-23-eco-cert/",
     "tags": ["環保認證", "永續", "客戶簡報"],
-    "status": "archived"
+    "status": "archived",
+    "auth": {
+      "required": true,
+      "key": "farglory-2026-05-23"
+    }
   }
 ]

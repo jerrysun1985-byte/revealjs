@@ -544,16 +544,30 @@
       </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.js"></script>
-    <script>
-      Reveal.initialize({
+    <script type="module">
+      import { ensureDeckAccess } from '../../../assets/auth-gate.js';
+
+      async function loadReveal() {
+        await new Promise((resolve, reject) => {
+          const script = document.createElement('script');
+          script.src = 'https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.js';
+          script.onload = resolve;
+          script.onerror = () => reject(new Error('Failed to load Reveal.js runtime'));
+          document.body.appendChild(script);
+        });
+      }
+
+      await ensureDeckAccess();
+      await loadReveal();
+
+      window.Reveal.initialize({
         hash: true,
         slideNumber: true,
-        transition: "fade",
-        backgroundTransition: "fade",
+        transition: 'fade',
+        backgroundTransition: 'fade',
         width: 1440,
         height: 810,
-        margin: 0.06
+        margin: 0.06,
       });
     </script>
   </body>
