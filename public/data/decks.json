@@ -1,5 +1,15 @@
 [
   {
+    "id": "farglory-2026-06-12-fet-three-site-exchange",
+    "client": "遠東",
+    "title": "遠東三地交流會展示內容",
+    "date": "2026-06-12",
+    "slug": "2026-06-12-fet-three-site-exchange",
+    "path": "decks/farglory/2026-06-12-fet-three-site-exchange/",
+    "tags": ["三地交流會", "議題改善", "客戶簡報"],
+    "status": "active"
+  },
+  {
     "id": "farglory-2026-05-30-textile-dyeing-notes",
     "client": "遠東",
     "title": "紡織染整注意事項",

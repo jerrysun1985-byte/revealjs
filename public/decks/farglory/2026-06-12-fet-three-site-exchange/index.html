@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>遠東三地交流會 2026-06-12｜議題改善方案展示</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/theme/white.css"
+    />
+    <style>
+      :root {
+        --ink: #14213d;
+        --muted: #5c677d;
+        --accent: #c75146;
+        --accent-soft: #f6e7e5;
+        --line: #d6dbe4;
+        --panel: #f7f9fc;
+        --ok: #1f7a5a;
+      }
+
+      .reveal {
+        font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+        color: var(--ink);
+      }
+
+      .reveal .slides {
+        text-align: left;
+      }
+
+      .reveal h1,
+      .reveal h2,
+      .reveal h3 {
+        color: var(--ink);
+        letter-spacing: 0;
+        text-transform: none;
+      }
+
+      .reveal h1 {
+        font-size: 2.2em;
+        margin-bottom: 0.25em;
+      }
+
+      .reveal h2 {
+        font-size: 1.55em;
+        margin-bottom: 0.35em;
+      }
+
+      .reveal h3 {
+        font-size: 0.9em;
+        color: var(--muted);
+        margin-bottom: 0.7em;
+      }
+
+      .reveal p,
+      .reveal li,
+      .reveal td,
+      .reveal th {
+        font-size: 0.66em;
+        line-height: 1.5;
+      }
+
+      .reveal ul {
+        display: block;
+        margin-left: 0.9em;
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 0.8rem;
+        align-items: end;
+      }
+
+      .hero-note,
+      .panel,
+      .metric,
+      .tag,
+      .callout {
+        border-radius: 10px;
+      }
+
+      .hero-note {
+        background: linear-gradient(135deg, #14213d 0%, #243b6b 100%);
+        color: #fff;
+        padding: 1rem 1.1rem;
+      }
+
+      .hero-note p {
+        font-size: 0.6em;
+        margin: 0.2em 0 0;
+        color: rgba(255, 255, 255, 0.88);
+      }
+
+      .grid-2,
+      .grid-3 {
+        display: grid;
+        gap: 0.7rem;
+      }
+
+      .grid-2 {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .grid-3 {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .metric {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        padding: 0.8rem;
+      }
+
+      .metric strong {
+        display: block;
+        font-size: 1.1em;
+        color: var(--accent);
+        margin-bottom: 0.25rem;
+      }
+
+      .panel {
+        background: #fff;
+        border: 1px solid var(--line);
+        padding: 0.8rem;
+      }
+
+      .tag {
+        display: inline-block;
+        padding: 0.12rem 0.5rem;
+        background: var(--accent-soft);
+        color: var(--accent);
+        font-size: 0.48em;
+        margin-right: 0.3rem;
+      }
+
+      .small {
+        font-size: 0.54em;
+        color: var(--muted);
+      }
+
+      .callout {
+        background: #fffaf0;
+        border-left: 5px solid #efb366;
+        padding: 0.7rem 0.85rem;
+      }
+
+      .ok {
+        color: var(--ok);
+      }
+
+      .risk {
+        color: var(--accent);
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 0.4rem;
+      }
+
+      th,
+      td {
+        border: 1px solid var(--line);
+        padding: 0.4rem 0.45rem;
+        vertical-align: top;
+      }
+
+      th {
+        background: #eef3fb;
+        color: var(--ink);
+        font-weight: 700;
+      }
+
+      .two-col {
+        display: grid;
+        grid-template-columns: 1.05fr 0.95fr;
+        gap: 0.8rem;
+      }
+
+      .divider {
+        height: 1px;
+        background: var(--line);
+        margin: 0.75rem 0;
+      }
+
+      .foot {
+        margin-top: 0.55rem;
+        font-size: 0.48em;
+        color: var(--muted);
+      }
+
+      .deck-back {
+        position: fixed;
+        top: 12px;
+        right: 12px;
+        z-index: 40;
+        padding: 8px 12px;
+        border-radius: 999px;
+        background: rgba(20, 33, 61, 0.9);
+        color: #fff;
+        text-decoration: none;
+        font-size: 14px;
+        font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <a class="deck-back" href="../../../">回到入口</a>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <div class="hero">
+            <div>
+              <div class="tag">遠東三地交流會 2026-06-12</div>
+              <h1>遠東議題改善方案展示內容</h1>
+              <h3>展示日期：2026-06-12｜依據 01-2026-05-21_FET_issue.pdf 內容整理</h3>
+              <p>
+                本簡報依原始文件內容，整理 4 項布面異常議題之現況、實驗結果、改善建議與附件技術重點，
+                作為遠東三地交流會展示內容。
+              </p>
+            </div>
+            <div class="hero-note">
+              <strong>簡報涵蓋範圍</strong>
+              <p>議題序列 038、039、042、043</p>
+              <p>主題包含 布面色跡、布面雞爪、清缸方案、染程微調建議</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>簡報總覽</h2>
+          <div class="grid-3">
+            <div class="metric">
+              <strong>4 項議題</strong>
+              <span>兩項布面色跡、兩項布面雞爪</span>
+            </div>
+            <div class="metric">
+              <strong>2 條改善主軸</strong>
+              <span>染料分散 / 清缸管理、浴比與染程條件微調</span>
+            </div>
+            <div class="metric">
+              <strong>1 份附件延伸方案</strong>
+              <span>ISOPON PM 清缸原理、配方、預防優勢</span>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="panel">
+            <p><strong>本次文件共同訊號</strong></p>
+            <ul>
+              <li>布面色跡議題在精煉後仍殘留，均染剝色僅有限改善或無法去除。</li>
+              <li>文件明確指向染料分散、染浴分散劑用量與染缸清潔度為優先改善方向。</li>
+              <li>布面雞爪議題則集中在浴比、FHB conc 添加及降溫曲線調整。</li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h2>議題 038 改善布面異常</h2>
+          <h3>申請人 台灣染色｜建檔時間 2026/05/01</h3>
+          <table>
+            <tr>
+              <th>欄位</th>
+              <th>內容</th>
+            </tr>
+            <tr>
+              <td>議題序列</td>
+              <td>038</td>
+            </tr>
+            <tr>
+              <td>台灣 ITEM / 布別 / 顏色</td>
+              <td>6298(26406890) / 2RP90SDF30 E WA 上漿切邊 / Boysenberry</td>
+            </tr>
+            <tr>
+              <td>問題描述</td>
+              <td>布面色跡</td>
+            </tr>
+            <tr>
+              <td>生產製程</td>
+              <td>投胚 → 溜布 → 化驗室覆色 → 染色 → 中檢 → 脫水 → 染色溜布 → 剖布 → 後定型 → 成檢 → 驗布 → 繳庫</td>
+            </tr>
+          </table>
+          <div class="two-col" style="margin-top: 0.65rem">
+            <div class="panel">
+              <p><strong>實驗過程</strong></p>
+              <p>去除布面色跡，進行精煉及均染測試後取出觀察布面狀況。</p>
+              <table>
+                <tr>
+                  <th>精煉</th>
+                  <th>均染</th>
+                </tr>
+                <tr>
+                  <td>3.0 g/l Sera Wash M-ELT<br />2.0 g/l Na2CO3<br />3.0 g/l Noveco 01<br />90℃ x 30min</td>
+                  <td>3.0 % Sera Gal P-BMO<br />3.0 % Sera Wash M-ELT<br />PH 4.5<br />130℃ x 30min</td>
+                </tr>
+              </table>
+            </div>
+            <div class="panel">
+              <p><strong>結論與建議</strong></p>
+              <ul>
+                <li>結論：精煉處理後布面色跡還有，但均染剝色後布面色跡有少掉一些些。</li>
+                <li>建議 1：在溶解染料時，添加 0.5% 的分散劑一起攪拌溶解。</li>
+                <li>建議 2：染浴中也增加分散劑的用量至 1.0 %~1.5 %。(添加 Setamol LD 分散劑)</li>
+                <li>建議 3：染色前先清缸處理。(建議增加清缸次數，可到廠內協助清缸作業程序)</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>議題 039 改善布面異常</h2>
+          <h3>申請人 台灣染色｜建檔時間 2026/05/01</h3>
+          <table>
+            <tr>
+              <th>欄位</th>
+              <th>內容</th>
+            </tr>
+            <tr>
+              <td>議題序列</td>
+              <td>039</td>
+            </tr>
+            <tr>
+              <td>台灣 ITEM / 布別 / 顏色</td>
+              <td>4495(26407850) / 28RP75 I WA GG UVC / 4EV</td>
+            </tr>
+            <tr>
+              <td>問題描述</td>
+              <td>布面色跡</td>
+            </tr>
+            <tr>
+              <td>生產製程</td>
+              <td>投胚 → 溜布 → 陶瓷磨毛 → 化驗室覆色 → 染色 → 中檢 → 脫水 → 染色溜布 → 剖布 → 色布縮練 → 後定型 → 成檢 → 驗布 → 繳庫</td>
+            </tr>
+          </table>
+          <div class="two-col" style="margin-top: 0.65rem">
+            <div class="panel">
+              <p><strong>實驗過程</strong></p>
+              <table>
+                <tr>
+                  <th>精煉</th>
+                  <th>均染</th>
+                </tr>
+                <tr>
+                  <td>3.0 g/l Sera Wash M-ELT<br />2.0 g/l Na2CO3<br />3.0 g/l Noveco 01<br />90℃ x 30min</td>
+                  <td>3.0 % Sera Gal P-BMO<br />3.0 % Sera Wash M-ELT<br />PH 4.5<br />130℃ x 30min</td>
+                </tr>
+              </table>
+            </div>
+            <div class="panel">
+              <p><strong>結論與建議</strong></p>
+              <ul>
+                <li class="risk">結論：精煉處理後布面色跡還有，但均染剝色後布面色跡還有。皆去除不掉。</li>
+                <li>建議 1：在溶解染料時，添加 0.5% 的分散劑一起攪拌溶解。</li>
+                <li>建議 2：染浴中也增加分散劑的用量至 1.0 %~1.5 %。(添加 Setamol LD 分散劑)</li>
+                <li>建議 3：染色前先清缸處理。(可到廠內協助清缸作業程序)</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>附件重點：ISOPON PM 清缸方案</h2>
+          <h3>對應議題 039 附件二、附件三</h3>
+          <div class="grid-2">
+            <div class="panel">
+              <p><strong>作用原理</strong></p>
+              <ul>
+                <li>高發泡性清洗死角，使泡沫深入缸內頂部、蒸汽加熱管及各種管路死角。</li>
+                <li>溶解低聚物 (Anti-oligomer)，防止沉積於缸壁後重新沾附布面形成色點。</li>
+                <li>去除油垢與水垢，提高升溫效率。</li>
+                <li>含天然還原單元，可有效剝除殘留染料，且無刺鼻異味。</li>
+              </ul>
+            </div>
+            <div class="panel">
+              <p><strong>預防優勢</strong></p>
+              <ul>
+                <li>不傷機體，可降低傳統保險粉造成墊圈老化與漏缸風險。</li>
+                <li>殘液可循環至副缸，連帶清潔副缸與連接管路。</li>
+                <li>可預防低聚物與油劑形成焦油化物，降低黑點或色斑風險。</li>
+                <li>為生質型助劑，生物可自然降解。</li>
+              </ul>
+            </div>
+          </div>
+          <div class="callout" style="margin-top: 0.7rem">
+            <p><strong>原文重點</strong>：透過定期（例如更換色系或處理高含油坯布後）使用 ISOPON PM 進行 130℃ 高溫清缸，能有效維持缸壁清潔，是解決布面異常色污的預防性核心手段。</p>
+          </div>
+        </section>
+
+        <section>
+          <h2>清缸操作建議</h2>
+          <h3>依附件原文整理</h3>
+          <div class="grid-2">
+            <div class="panel">
+              <p><strong>一般清缸法 (Standard Method)</strong></p>
+              <ul>
+                <li>浴量：染色水位之 1/2 至 1/4（約為傳統漂缸的一半用水）。</li>
+                <li>配方：ISOPON PM 8 g/l；液鹼 (50%) 8 g/l。</li>
+                <li>流程：70℃ 以下入水加助劑 → 升溫至 130℃ 持溫運轉 30 分鐘 → 降溫至 80℃ 靜置消泡排液 → 溫水溢流沖洗 2–5 分鐘 → 1–2 g/l 酸中和 5–10 分鐘。</li>
+                <li>備註：第一次使用建議連續清缸兩次。</li>
+              </ul>
+            </div>
+            <div class="panel">
+              <p><strong>浸漬過夜清缸法 (Overnight Method)</strong></p>
+              <ul>
+                <li>加強配方：ISOPON PM 8 g/l + 液鹼 8 g/l + Permulsin AO 300 5 g/l。</li>
+                <li>流程：升溫至 130℃ 運轉 30 分鐘後，關掉泵浦靜置過夜。</li>
+                <li>隔日再升溫至 90℃ 循環 30 分鐘後排液清洗。</li>
+                <li>適用對象：針對汙染嚴重的染缸加強處理。</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>議題 042 改善布面品質</h2>
+          <h3>申請人 台灣染色現場｜建檔時間 2026/05/08</h3>
+          <table>
+            <tr>
+              <th>欄位</th>
+              <th>內容</th>
+            </tr>
+            <tr>
+              <td>議題序列</td>
+              <td>042</td>
+            </tr>
+            <tr>
+              <td>台灣 ITEM / 布別 / 顏色</td>
+              <td>4397 / 28RP75I WA UVC / 00A</td>
+            </tr>
+            <tr>
+              <td>問題描述</td>
+              <td>布面雞爪</td>
+            </tr>
+            <tr>
+              <td>生產製程</td>
+              <td>投胚 → 溜布外廠 → 化驗室覆色 → 染色 → 中檢 → 脫水 → 染色溜布 → 剖布 → 後定型 → 成檢</td>
+            </tr>
+          </table>
+          <div class="panel" style="margin-top: 0.7rem">
+            <p><strong>改善建議</strong></p>
+            <ul>
+              <li>建議浴比投布量盡可能達到 L:R ≒ 1:15~20。</li>
+              <li>缸鍊條件中添加 FHB conc 來改善。(精練劑 + 鹼 + 2.0 g/l FHB conc)</li>
+              <li>染色中也添加 2.0 g/l FHB conc，並且降溫速度作些微調整。</li>
+              <li>降溫建議：131℃~120℃ 以 0.8℃/min；120℃~85℃ 以 1.0℃/min；85℃~70℃以下 以 1.5℃/min。</li>
+            </ul>
+            <p class="small">PS：以上染色製程作微調整，若有需要可至現場協助一同進行研商。</p>
+          </div>
+        </section>
+
+        <section>
+          <h2>議題 043 改善布面異常</h2>
+          <h3>申請人 台灣染色現場｜建檔時間 2026/05/08</h3>
+          <table>
+            <tr>
+              <th>欄位</th>
+              <th>內容</th>
+            </tr>
+            <tr>
+              <td>議題序列</td>
+              <td>043</td>
+            </tr>
+            <tr>
+              <td>台灣 ITEM / 布別 / 顏色</td>
+              <td>2060 / 28RP75I WA / 6JY</td>
+            </tr>
+            <tr>
+              <td>問題描述</td>
+              <td>布面雞爪</td>
+            </tr>
+            <tr>
+              <td>生產製程</td>
+              <td>投胚 → 溜布缸練 → 缸練 → 脫水 → 染色溜布 → 剖布 → 定型 → 化驗室覆色 → 染色 → 中檢 → 染色溜布 → 剖布 → 第 10 台驗布 → 後定型 → 成檢 → 驗布 → 繳庫</td>
+            </tr>
+          </table>
+          <div class="panel" style="margin-top: 0.7rem">
+            <p><strong>改善建議</strong></p>
+            <ul>
+              <li>建議浴比投布量可否達到 L:R ≒ 1:15~20。</li>
+              <li>缸鍊條件中添加 FHB conc 來改善。(精練劑 + 鹼 + 2.0 g/l FHB conc)</li>
+              <li>染色中也添加 2.0 g/l FHB conc，並且降溫速度作些微調整。</li>
+              <li>降溫建議：131℃~120℃ 以 0.8℃/min；120℃~85℃ 以 1.0℃/min；85℃~70℃以下 以 1.5~2.0℃/min。</li>
+            </ul>
+            <p class="small">PS：以上染色製程微調整，若有需要可至現場協助一同進行研商。</p>
+          </div>
+        </section>
+
+        <section>
+          <h2>共同技術觀察</h2>
+          <div class="grid-2">
+            <div class="panel">
+              <p><strong>布面色跡議題</strong></p>
+              <ul>
+                <li>精煉與均染剝色不是完全去除保證，038 僅少量改善，039 仍無法去除。</li>
+                <li>改善方向集中在染料溶解分散、染浴分散劑增加、清缸前處理。</li>
+                <li>PS 原文皆提到：T100%, Re-T 100%, T/OP 建議染程。</li>
+              </ul>
+            </div>
+            <div class="panel">
+              <p><strong>布面雞爪議題</strong></p>
+              <ul>
+                <li>改善方向一致聚焦在浴比控制、FHB conc 添加、降溫曲線管理。</li>
+                <li>兩案皆指向 120℃ 左右釋出造成大分子色花、色污的風險需留意。</li>
+                <li>現場條件微調需搭配製程協同驗證。</li>
+              </ul>
+            </div>
+          </div>
+          <div class="callout" style="margin-top: 0.7rem">
+            <p><strong>原文 PS 共通訊息</strong>：因 OP 約在 70~80℃大量濾色，在 120℃左右 80% 會急速釋出，易造成大分子如紅色、寶藍色等，(配伍性差的配方) 色花、色污的現象 (還原洗不易洗清)。</p>
+          </div>
+        </section>
+
+        <section>
+          <h2>客戶簡報可採用的結論頁</h2>
+          <div class="panel">
+            <p><strong>結論摘要</strong></p>
+            <ul>
+              <li>本批議題可分為兩類：布面色跡與布面雞爪，兩者均已提出具體製程改善方向。</li>
+              <li>布面色跡案件中，精煉與均染剝色測試顯示改善有限，因此需優先導入染料分散管理與清缸管理。</li>
+              <li>布面雞爪案件中，建議以浴比控制、FHB conc 添加與降溫曲線微調作為現場改善重點。</li>
+              <li class="risk">議題 039 顯示既有測試條件下色跡皆去除不掉，建議列為優先追蹤項目。</li>
+            </ul>
+          </div>
+          <div class="grid-3" style="margin-top: 0.7rem">
+            <div class="metric">
+              <strong>立即執行</strong>
+              <span>染料分散流程、Setamol LD 用量、清缸前處理</span>
+            </div>
+            <div class="metric">
+              <strong>現場驗證</strong>
+              <span>FHB conc 投入與降溫速度微調</span>
+            </div>
+            <div class="metric">
+              <strong>持續預防</strong>
+              <span>定期 ISOPON PM 高溫清缸與換色後管理</span>
+            </div>
+          </div>
+          <p class="foot">註：本頁僅依 PDF 內容重組簡報語序，未新增文件外的技術結論。</p>
+        </section>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.js"></script>
+    <script>
+      Reveal.initialize({
+        hash: true,
+        slideNumber: true,
+        transition: "fade",
+        backgroundTransition: "fade",
+        width: 1440,
+        height: 810,
+        margin: 0.06
+      });
+    </script>
+  </body>
+</html>
