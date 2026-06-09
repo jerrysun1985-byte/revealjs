@@ -243,6 +243,14 @@ function promptForPassword({ deckTitle, hint }) {
 }
 
 export async function ensureDeckAccess() {
+  if (window.location.pathname.includes('/templates/deck/')) {
+    return {
+      id: 'template',
+      title: 'Client Deck Template',
+      auth: { required: false },
+    };
+  }
+
   const basePath = detectBasePath();
 
   let decks;
