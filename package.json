@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "predev": "node scripts/sync-reveal-assets.mjs",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vite",
+    "prebuild": "node scripts/sync-reveal-assets.mjs",
     "build": "vite build",
     "preview": "vite preview"
   },
